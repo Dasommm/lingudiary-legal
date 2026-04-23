@@ -51,6 +51,43 @@
             font-weight: 500;
         }
 
+        .lang-switcher {
+            display: inline-flex;
+            gap: 0;
+            margin-top: 20px;
+            background: #f6f8f7;
+            border-radius: 999px;
+            padding: 4px;
+            border: 1px solid #edf1f3;
+        }
+
+        .lang-switcher button {
+            appearance: none;
+            border: none;
+            background: transparent;
+            padding: 6px 18px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #6c7278;
+            border-radius: 999px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: inherit;
+        }
+
+        .lang-switcher button:hover {
+            color: #111827;
+        }
+
+        .lang-switcher button.active {
+            background: #13eca4;
+            color: white;
+        }
+
+        [data-lang]:not(.lang-active) {
+            display: none !important;
+        }
+
         .links {
             display: grid;
             gap: 20px;
@@ -129,25 +166,45 @@
     <div class="container">
         <div class="header">
             <div class="logo">LINGU DIARY</div>
-            <p class="subtitle">Legal Information</p>
+            <p class="subtitle lang-active" data-lang="en">Legal Information</p>
+            <p class="subtitle" data-lang="ko">법적 고지</p>
+            <div class="lang-switcher" role="group" aria-label="Language">
+                <button type="button" class="active" data-lang-btn="en">EN</button>
+                <button type="button" data-lang-btn="ko">한국어</button>
+            </div>
         </div>
 
         <div class="links">
-            <a href="/privacy-policy.html" class="link-card">
-                <h2>Privacy Policy</h2>
-                <p>Learn how we collect, use, and protect your personal information when you use our app.</p>
+            <a href="privacy-policy.html" class="link-card">
+                <div class="lang-active" data-lang="en">
+                    <h2>Privacy Policy</h2>
+                    <p>Learn how we collect, use, and protect your personal information when you use our app.</p>
+                </div>
+                <div data-lang="ko">
+                    <h2>개인정보 처리방침</h2>
+                    <p>앱을 이용하실 때 저희가 귀하의 개인정보를 어떻게 수집, 이용, 보호하는지 확인하세요.</p>
+                </div>
             </a>
 
-            <a href="/terms-of-service.html" class="link-card">
-                <h2>Terms of Service</h2>
-                <p>Read the terms and conditions that govern your use of Lingu Diary.</p>
+            <a href="terms-of-service.html" class="link-card">
+                <div class="lang-active" data-lang="en">
+                    <h2>Terms of Service</h2>
+                    <p>Read the terms and conditions that govern your use of Lingu Diary.</p>
+                </div>
+                <div data-lang="ko">
+                    <h2>서비스 이용약관</h2>
+                    <p>Lingu Diary 이용에 적용되는 약관 및 조건을 확인하세요.</p>
+                </div>
             </a>
         </div>
 
         <div class="footer">
-            <p>Last updated: April 23, 2026</p>
-            <p>Questions? Contact us at <a href="mailto:support.lingudiary@gmail.com">support.lingudiary@gmail.com</a></p>
+            <p class="lang-active" data-lang="en">Last updated: April 23, 2026</p>
+            <p data-lang="ko">최종 업데이트: 2026년 4월 23일</p>
+            <p class="lang-active" data-lang="en">Questions? Contact us at <a href="mailto:support.lingudiary@gmail.com">support.lingudiary@gmail.com</a></p>
+            <p data-lang="ko">문의사항이 있으신가요? <a href="mailto:support.lingudiary@gmail.com">support.lingudiary@gmail.com</a>으로 연락주세요.</p>
         </div>
     </div>
+    <script src="lang.js"></script>
 </body>
 </html>

@@ -60,6 +60,47 @@ body {
     opacity: 0.8;
 }
 
+.lang-switcher {
+    display: inline-flex;
+    gap: 0;
+    margin-top: 16px;
+    background: #f6f8f7;
+    border-radius: 999px;
+    padding: 4px;
+    border: 1px solid #edf1f3;
+}
+
+.lang-switcher button {
+    appearance: none;
+    border: none;
+    background: transparent;
+    padding: 6px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #6c7278;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+}
+
+.lang-switcher button:hover {
+    color: #111827;
+}
+
+.lang-switcher button.active {
+    background: #13eca4;
+    color: white;
+}
+
+[data-lang]:not(.lang-active) {
+    display: none !important;
+}
+
+a[data-lang].lang-active.back-link {
+    display: inline-block;
+}
+
 .content {
     line-height: 1.8;
 }

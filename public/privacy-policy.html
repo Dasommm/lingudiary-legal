@@ -4,163 +4,320 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Lingu Diary</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <a href="/" class="back-link">← Back to Legal Home</a>
-            <h1>Privacy Policy</h1>
-            <p class="last-updated">Last Updated: April 23, 2026</p>
+            <a href="index.html" class="back-link lang-active" data-lang="en">← Back to Legal Home</a>
+            <a href="index.html" class="back-link" data-lang="ko">← 법적 고지 홈으로</a>
+            <h1 class="lang-active" data-lang="en">Privacy Policy</h1>
+            <h1 data-lang="ko">개인정보 처리방침</h1>
+            <p class="last-updated lang-active" data-lang="en">Last Updated: April 23, 2026</p>
+            <p class="last-updated" data-lang="ko">최종 업데이트: 2026년 4월 23일</p>
+            <div class="lang-switcher" role="group" aria-label="Language">
+                <button type="button" class="active" data-lang-btn="en">EN</button>
+                <button type="button" data-lang-btn="ko">한국어</button>
+            </div>
         </div>
 
         <div class="content">
-            <p class="intro">LinguDiary Team ("we", "our", or "us") operates the Lingu Diary mobile application (the "App"). We are committed to protecting your privacy and complying with applicable privacy laws, including the Personal Information Protection Act of South Korea.</p>
+            <!-- ========== ENGLISH ========== -->
+            <div class="lang-active" data-lang="en">
+                <p class="intro">LinguDiary Team ("we", "our", or "us") operates the Lingu Diary mobile application (the "App"). We are committed to protecting your privacy and complying with applicable privacy laws, including the Personal Information Protection Act of South Korea.</p>
 
-            <h2>1. Information We Collect</h2>
+                <h2>1. Information We Collect</h2>
 
-            <h3>1.1 Account Information</h3>
-            <ul>
-                <li><strong>Email address</strong>: Used for account creation, authentication, and communication</li>
-                <li><strong>Authentication credentials</strong>: Managed securely through Supabase</li>
-            </ul>
-
-            <h3>1.2 User-Generated Content</h3>
-            <ul>
-                <li><strong>English diary entries</strong>: The content you write in the app</li>
-                <li><strong>AI-generated feedback</strong>: Corrections, tips, and suggestions provided by our AI service</li>
-                <li><strong>Learning statistics</strong>: Progress tracking, streaks, vocabulary lists, and achievement data</li>
-            </ul>
-
-            <h3>1.3 Automatically Collected Information</h3>
-            <ul>
-                <li><strong>Device information</strong>: Non-identifiable device type and operating system version</li>
-                <li><strong>Usage logs</strong>: App usage patterns for service improvement</li>
-                <li><strong>Error diagnostics</strong>: Crash reports and technical errors (non-personal)</li>
-            </ul>
-
-            <h3>1.4 Subscription Information</h3>
-            <ul>
-                <li><strong>Payment processing</strong>: All payments are processed exclusively by Apple through the App Store</li>
-                <li><strong>We do not collect or store</strong>: Credit card information, billing addresses, or any payment details</li>
-                <li><strong>Subscription status</strong>: We track your subscription tier (Free/Plus) to provide appropriate features</li>
-            </ul>
-
-            <h2>2. How We Use Your Information</h2>
-            <p>We use the collected information for the following purposes:</p>
-            <ul>
-                <li><strong>Service delivery</strong>: Provide AI-powered English correction and feedback</li>
-                <li><strong>Content storage</strong>: Save your diary entries and learning progress</li>
-                <li><strong>Feature provision</strong>: Track streaks, vocabulary growth, and learning statistics</li>
-                <li><strong>Service improvement</strong>: Analyze usage patterns to enhance the app</li>
-                <li><strong>Customer support</strong>: Respond to your inquiries and technical issues</li>
-                <li><strong>Account management</strong>: Authenticate users and maintain account security</li>
-            </ul>
-
-            <h2>3. Data Sharing and Third-Party Services</h2>
-
-            <h3>3.1 Third-Party Service Providers</h3>
-            <p>We use the following trusted third-party services:</p>
-
-            <h4>Database & Authentication</h4>
-            <ul>
-                <li><strong>Supabase</strong>: Stores your account data, diary entries, and learning statistics</li>
-                <li><strong>Purpose</strong>: Database hosting and user authentication</li>
-                <li><strong>Data processed</strong>: Email, diary content, learning data</li>
-            </ul>
-
-            <h4>AI Processing Services</h4>
-            <ul>
-                <li><strong>Google Gemini</strong>: AI-powered English correction and feedback</li>
-                <li><strong>Purpose</strong>: Generate writing corrections and learning tips</li>
-                <li><strong>Data processed</strong>: Diary entry text only (transmitted via secure API)</li>
-            </ul>
-
-            <div class="important-note">
-                <h4>Important Notes:</h4>
+                <h3>1.1 Account Information</h3>
                 <ul>
-                    <li>Your diary content is sent to AI services <strong>only</strong> when you request feedback</li>
-                    <li>AI providers process your text solely for correction purposes</li>
-                    <li>We do <strong>not</strong> use your diary content to train AI models</li>
-                    <li>We do <strong>not</strong> sell your personal information to any third party</li>
+                    <li><strong>Email address</strong>: Used for account creation, authentication, and communication</li>
+                    <li><strong>Authentication credentials</strong>: Managed securely through Supabase</li>
                 </ul>
+
+                <h3>1.2 User-Generated Content</h3>
+                <ul>
+                    <li><strong>English diary entries</strong>: The content you write in the app</li>
+                    <li><strong>AI-generated feedback</strong>: Corrections, tips, and suggestions provided by our AI service</li>
+                    <li><strong>Learning statistics</strong>: Progress tracking, streaks, vocabulary lists, and achievement data</li>
+                </ul>
+
+                <h3>1.3 Automatically Collected Information</h3>
+                <ul>
+                    <li><strong>Device information</strong>: Non-identifiable device type and operating system version</li>
+                    <li><strong>Usage logs</strong>: App usage patterns for service improvement</li>
+                    <li><strong>Error diagnostics</strong>: Crash reports and technical errors (non-personal)</li>
+                </ul>
+
+                <h3>1.4 Subscription Information</h3>
+                <ul>
+                    <li><strong>Payment processing</strong>: All payments are processed exclusively by Apple through the App Store</li>
+                    <li><strong>We do not collect or store</strong>: Credit card information, billing addresses, or any payment details</li>
+                    <li><strong>Subscription status</strong>: We track your subscription tier (Free/Plus) to provide appropriate features</li>
+                </ul>
+
+                <h2>2. How We Use Your Information</h2>
+                <p>We use the collected information for the following purposes:</p>
+                <ul>
+                    <li><strong>Service delivery</strong>: Provide AI-powered English correction and feedback</li>
+                    <li><strong>Content storage</strong>: Save your diary entries and learning progress</li>
+                    <li><strong>Feature provision</strong>: Track streaks, vocabulary growth, and learning statistics</li>
+                    <li><strong>Service improvement</strong>: Analyze usage patterns to enhance the app</li>
+                    <li><strong>Customer support</strong>: Respond to your inquiries and technical issues</li>
+                    <li><strong>Account management</strong>: Authenticate users and maintain account security</li>
+                </ul>
+
+                <h2>3. Data Sharing and Third-Party Services</h2>
+
+                <h3>3.1 Third-Party Service Providers</h3>
+                <p>We use the following trusted third-party services:</p>
+
+                <h4>Database & Authentication</h4>
+                <ul>
+                    <li><strong>Supabase</strong>: Stores your account data, diary entries, and learning statistics</li>
+                    <li><strong>Purpose</strong>: Database hosting and user authentication</li>
+                    <li><strong>Data processed</strong>: Email, diary content, learning data</li>
+                </ul>
+
+                <h4>AI Processing Services</h4>
+                <ul>
+                    <li><strong>Google Gemini</strong>: AI-powered English correction and feedback</li>
+                    <li><strong>Purpose</strong>: Generate writing corrections and learning tips</li>
+                    <li><strong>Data processed</strong>: Diary entry text only (transmitted via secure API)</li>
+                </ul>
+
+                <div class="important-note">
+                    <h4>Important Notes:</h4>
+                    <ul>
+                        <li>Your diary content is sent to AI services <strong>only</strong> when you request feedback</li>
+                        <li>AI providers process your text solely for correction purposes</li>
+                        <li>We do <strong>not</strong> use your diary content to train AI models</li>
+                        <li>We do <strong>not</strong> sell your personal information to any third party</li>
+                    </ul>
+                </div>
+
+                <h3>3.2 Legal Requirements</h3>
+                <p>We may disclose your information if required by law, court order, or government regulation.</p>
+
+                <h2>4. International Data Transfers</h2>
+                <p>Your data may be transferred to and processed on servers located outside of South Korea, including:</p>
+                <ul>
+                    <li><strong>Supabase servers</strong>: United States</li>
+                    <li><strong>AI processing</strong>: May involve servers in the United States or other countries</li>
+                </ul>
+                <p>We ensure that such transfers comply with applicable data protection laws and that appropriate safeguards are in place.</p>
+
+                <h2>5. Data Retention and Deletion</h2>
+
+                <h3>5.1 Retention Period</h3>
+                <ul>
+                    <li><strong>Active accounts</strong>: Data is retained while your account is active</li>
+                    <li><strong>Deleted accounts</strong>: All personal data is permanently deleted within 30 days of account deletion</li>
+                    <li><strong>Legal obligations</strong>: Some data may be retained longer if required by law</li>
+                </ul>
+
+                <h3>5.2 Account Deletion</h3>
+                <p>You can delete your account at any time through the app's Settings. Upon deletion:</p>
+                <ul>
+                    <li>All diary entries are permanently deleted</li>
+                    <li>All learning statistics are removed</li>
+                    <li>Your email and authentication data are erased</li>
+                    <li>This action is <strong>irreversible</strong></li>
+                </ul>
+
+                <h2>6. Your Rights</h2>
+                <p>Under applicable privacy laws, you have the right to:</p>
+                <ul>
+                    <li><strong>Access</strong>: Request a copy of your personal data</li>
+                    <li><strong>Correction</strong>: Request correction of inaccurate data</li>
+                    <li><strong>Deletion</strong>: Request deletion of your account and data</li>
+                    <li><strong>Restriction</strong>: Request limitation of data processing</li>
+                    <li><strong>Portability</strong>: Request your data in a portable format</li>
+                    <li><strong>Objection</strong>: Object to certain types of data processing</li>
+                </ul>
+                <p>To exercise these rights, contact us at: <a href="mailto:support.lingudiary@gmail.com">support.lingudiary@gmail.com</a></p>
+
+                <h2>7. Data Security</h2>
+                <p>We implement appropriate technical and organizational measures to protect your data:</p>
+                <ul>
+                    <li><strong>Encryption</strong>: Data transmission uses HTTPS/SSL encryption</li>
+                    <li><strong>Access control</strong>: Restricted access to personal data</li>
+                    <li><strong>Secure authentication</strong>: Password hashing and secure session management</li>
+                    <li><strong>Regular monitoring</strong>: Continuous security assessments</li>
+                </ul>
+                <p>However, no method of transmission over the internet is 100% secure. We cannot guarantee absolute security.</p>
+
+                <h2>8. Children's Privacy</h2>
+                <p>Lingu Diary is not intended for children under 13 years of age. We do not knowingly collect personal information from children. If you believe a child has provided us with personal data, please contact us immediately.</p>
+
+                <h2>9. Changes to This Privacy Policy</h2>
+                <p>We may update this Privacy Policy from time to time. We will notify you of significant changes through:</p>
+                <ul>
+                    <li>In-app notifications</li>
+                    <li>Email notifications (if applicable)</li>
+                    <li>Updated "Last Updated" date at the top of this policy</li>
+                </ul>
+                <p>Your continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+                <h2>10. Contact Information</h2>
+                <p>If you have questions, concerns, or requests regarding this Privacy Policy:</p>
+                <p><strong>LinguDiary Team</strong><br>
+                Email: <a href="mailto:support.lingudiary@gmail.com">support.lingudiary@gmail.com</a></p>
+
+                <h2>11. Governing Law</h2>
+                <p>This Privacy Policy is governed by the laws of the Republic of Korea.</p>
             </div>
 
-            <h3>3.2 Legal Requirements</h3>
-            <p>We may disclose your information if required by law, court order, or government regulation.</p>
+            <!-- ========== KOREAN ========== -->
+            <div data-lang="ko">
+                <p class="intro">LinguDiary 팀(이하 "당사")은 Lingu Diary 모바일 애플리케이션(이하 "본 앱")을 운영합니다. 당사는 이용자의 개인정보를 보호하고, 대한민국 「개인정보 보호법」을 비롯한 관련 법령을 준수하기 위해 최선을 다하고 있습니다.</p>
 
-            <h2>4. International Data Transfers</h2>
-            <p>Your data may be transferred to and processed on servers located outside of South Korea, including:</p>
-            <ul>
-                <li><strong>Supabase servers</strong>: United States</li>
-                <li><strong>AI processing</strong>: May involve servers in the United States or other countries</li>
-            </ul>
-            <p>We ensure that such transfers comply with applicable data protection laws and that appropriate safeguards are in place.</p>
+                <h2>1. 수집하는 개인정보 항목</h2>
 
-            <h2>5. Data Retention and Deletion</h2>
+                <h3>1.1 계정 정보</h3>
+                <ul>
+                    <li><strong>이메일 주소</strong>: 계정 생성, 인증 및 고객 연락에 사용됩니다.</li>
+                    <li><strong>인증 정보</strong>: Supabase를 통해 안전하게 관리됩니다.</li>
+                </ul>
 
-            <h3>5.1 Retention Period</h3>
-            <ul>
-                <li><strong>Active accounts</strong>: Data is retained while your account is active</li>
-                <li><strong>Deleted accounts</strong>: All personal data is permanently deleted within 30 days of account deletion</li>
-                <li><strong>Legal obligations</strong>: Some data may be retained longer if required by law</li>
-            </ul>
+                <h3>1.2 이용자 생성 콘텐츠</h3>
+                <ul>
+                    <li><strong>영어 일기 내용</strong>: 이용자가 본 앱에 작성한 콘텐츠</li>
+                    <li><strong>AI 생성 피드백</strong>: 당사 AI 서비스가 제공하는 교정, 팁 및 제안 내용</li>
+                    <li><strong>학습 통계</strong>: 진도, 연속 작성일(streak), 단어 목록 및 성취 데이터</li>
+                </ul>
 
-            <h3>5.2 Account Deletion</h3>
-            <p>You can delete your account at any time through the app's Settings. Upon deletion:</p>
-            <ul>
-                <li>All diary entries are permanently deleted</li>
-                <li>All learning statistics are removed</li>
-                <li>Your email and authentication data are erased</li>
-                <li>This action is <strong>irreversible</strong></li>
-            </ul>
+                <h3>1.3 자동 수집 정보</h3>
+                <ul>
+                    <li><strong>기기 정보</strong>: 식별이 불가능한 기기 종류 및 운영체제 버전</li>
+                    <li><strong>이용 로그</strong>: 서비스 개선을 위한 앱 사용 패턴</li>
+                    <li><strong>오류 진단 정보</strong>: 비식별 충돌 보고 및 기술적 오류 정보</li>
+                </ul>
 
-            <h2>6. Your Rights</h2>
-            <p>Under applicable privacy laws, you have the right to:</p>
-            <ul>
-                <li><strong>Access</strong>: Request a copy of your personal data</li>
-                <li><strong>Correction</strong>: Request correction of inaccurate data</li>
-                <li><strong>Deletion</strong>: Request deletion of your account and data</li>
-                <li><strong>Restriction</strong>: Request limitation of data processing</li>
-                <li><strong>Portability</strong>: Request your data in a portable format</li>
-                <li><strong>Objection</strong>: Object to certain types of data processing</li>
-            </ul>
-            <p>To exercise these rights, contact us at: <a href="mailto:support.lingudiary@gmail.com">support.lingudiary@gmail.com</a></p>
+                <h3>1.4 구독 관련 정보</h3>
+                <ul>
+                    <li><strong>결제 처리</strong>: 모든 결제는 App Store를 통해 Apple이 단독으로 처리합니다.</li>
+                    <li><strong>당사가 수집·저장하지 않는 정보</strong>: 신용카드 정보, 청구지 주소 등 일체의 결제 정보</li>
+                    <li><strong>구독 상태</strong>: 적절한 기능 제공을 위해 이용자의 구독 등급(Free/Plus) 정보를 확인합니다.</li>
+                </ul>
 
-            <h2>7. Data Security</h2>
-            <p>We implement appropriate technical and organizational measures to protect your data:</p>
-            <ul>
-                <li><strong>Encryption</strong>: Data transmission uses HTTPS/SSL encryption</li>
-                <li><strong>Access control</strong>: Restricted access to personal data</li>
-                <li><strong>Secure authentication</strong>: Password hashing and secure session management</li>
-                <li><strong>Regular monitoring</strong>: Continuous security assessments</li>
-            </ul>
-            <p>However, no method of transmission over the internet is 100% secure. We cannot guarantee absolute security.</p>
+                <h2>2. 개인정보의 이용 목적</h2>
+                <p>당사는 수집한 정보를 다음 목적에 이용합니다.</p>
+                <ul>
+                    <li><strong>서비스 제공</strong>: AI 기반 영어 교정 및 피드백 제공</li>
+                    <li><strong>콘텐츠 저장</strong>: 이용자의 일기 및 학습 진행 상황 저장</li>
+                    <li><strong>기능 제공</strong>: 연속 작성일, 어휘 성장, 학습 통계 제공</li>
+                    <li><strong>서비스 개선</strong>: 이용 패턴 분석을 통한 앱 개선</li>
+                    <li><strong>고객 지원</strong>: 문의 및 기술적 이슈 대응</li>
+                    <li><strong>계정 관리</strong>: 이용자 인증 및 계정 보안 유지</li>
+                </ul>
 
-            <h2>8. Children's Privacy</h2>
-            <p>Lingu Diary is not intended for children under 13 years of age. We do not knowingly collect personal information from children. If you believe a child has provided us with personal data, please contact us immediately.</p>
+                <h2>3. 개인정보의 공유 및 제3자 서비스</h2>
 
-            <h2>9. Changes to This Privacy Policy</h2>
-            <p>We may update this Privacy Policy from time to time. We will notify you of significant changes through:</p>
-            <ul>
-                <li>In-app notifications</li>
-                <li>Email notifications (if applicable)</li>
-                <li>Updated "Last Updated" date at the top of this policy</li>
-            </ul>
-            <p>Your continued use of the app after changes constitutes acceptance of the updated policy.</p>
+                <h3>3.1 제3자 서비스 제공업체</h3>
+                <p>당사는 다음과 같은 신뢰할 수 있는 제3자 서비스를 이용합니다.</p>
 
-            <h2>10. Contact Information</h2>
-            <p>If you have questions, concerns, or requests regarding this Privacy Policy:</p>
-            <p><strong>LinguDiary Team</strong><br>
-            Email: <a href="mailto:support.lingudiary@gmail.com">support.lingudiary@gmail.com</a></p>
+                <h4>데이터베이스 및 인증</h4>
+                <ul>
+                    <li><strong>Supabase</strong>: 계정 데이터, 일기 내용, 학습 통계 저장</li>
+                    <li><strong>이용 목적</strong>: 데이터베이스 호스팅 및 이용자 인증</li>
+                    <li><strong>처리 정보</strong>: 이메일, 일기 내용, 학습 데이터</li>
+                </ul>
 
-            <h2>11. Governing Law</h2>
-            <p>This Privacy Policy is governed by the laws of the Republic of Korea.</p>
+                <h4>AI 처리 서비스</h4>
+                <ul>
+                    <li><strong>Google Gemini</strong>: AI 기반 영어 교정 및 피드백</li>
+                    <li><strong>이용 목적</strong>: 작문 교정 및 학습 팁 생성</li>
+                    <li><strong>처리 정보</strong>: 일기 본문 텍스트 (보안 API를 통해 전송)</li>
+                </ul>
+
+                <div class="important-note">
+                    <h4>중요 사항</h4>
+                    <ul>
+                        <li>이용자의 일기 내용은 이용자가 피드백을 요청하는 경우에 <strong>한하여</strong> AI 서비스로 전송됩니다.</li>
+                        <li>AI 제공업체는 오직 교정 목적으로만 텍스트를 처리합니다.</li>
+                        <li>당사는 이용자의 일기 내용을 AI 모델 학습에 <strong>사용하지 않습니다</strong>.</li>
+                        <li>당사는 이용자의 개인정보를 어떠한 제3자에게도 <strong>판매하지 않습니다</strong>.</li>
+                    </ul>
+                </div>
+
+                <h3>3.2 법적 요구 사항</h3>
+                <p>법령, 법원의 명령 또는 정부 기관의 규제에 따라 요구되는 경우 이용자의 정보를 공개할 수 있습니다.</p>
+
+                <h2>4. 개인정보의 국외 이전</h2>
+                <p>이용자의 데이터는 다음과 같이 대한민국 외부에 위치한 서버로 이전·처리될 수 있습니다.</p>
+                <ul>
+                    <li><strong>Supabase 서버</strong>: 미국</li>
+                    <li><strong>AI 처리</strong>: 미국 또는 기타 국가 서버를 이용할 수 있음</li>
+                </ul>
+                <p>당사는 이러한 이전이 관련 개인정보 보호법을 준수하고, 적절한 보호 조치가 이루어지도록 합니다.</p>
+
+                <h2>5. 개인정보의 보유 및 파기</h2>
+
+                <h3>5.1 보유 기간</h3>
+                <ul>
+                    <li><strong>활성 계정</strong>: 계정이 활성 상태인 동안 데이터가 보관됩니다.</li>
+                    <li><strong>삭제된 계정</strong>: 계정 삭제 후 30일 이내에 모든 개인정보가 영구 삭제됩니다.</li>
+                    <li><strong>법적 의무</strong>: 관련 법령에 따라 일부 데이터는 더 오랫동안 보관될 수 있습니다.</li>
+                </ul>
+
+                <h3>5.2 계정 삭제</h3>
+                <p>이용자는 앱 설정에서 언제든지 계정을 삭제할 수 있습니다. 계정 삭제 시 다음이 처리됩니다.</p>
+                <ul>
+                    <li>모든 일기 내용이 영구 삭제됩니다.</li>
+                    <li>모든 학습 통계가 삭제됩니다.</li>
+                    <li>이메일 및 인증 정보가 삭제됩니다.</li>
+                    <li>본 조치는 <strong>되돌릴 수 없습니다</strong>.</li>
+                </ul>
+
+                <h2>6. 이용자의 권리</h2>
+                <p>관련 개인정보 보호법에 따라 이용자는 다음 권리를 가집니다.</p>
+                <ul>
+                    <li><strong>열람</strong>: 보관된 개인정보의 사본 요청</li>
+                    <li><strong>정정</strong>: 부정확한 정보의 정정 요청</li>
+                    <li><strong>삭제</strong>: 계정 및 개인정보의 삭제 요청</li>
+                    <li><strong>처리 제한</strong>: 개인정보 처리의 제한 요청</li>
+                    <li><strong>이동</strong>: 이동 가능한 형식으로의 데이터 제공 요청</li>
+                    <li><strong>거부</strong>: 특정 유형의 개인정보 처리에 대한 반대</li>
+                </ul>
+                <p>권리 행사를 위해서는 <a href="mailto:support.lingudiary@gmail.com">support.lingudiary@gmail.com</a>으로 연락해 주시기 바랍니다.</p>
+
+                <h2>7. 개인정보 보안</h2>
+                <p>당사는 이용자의 데이터를 보호하기 위해 적절한 기술적·관리적 조치를 시행합니다.</p>
+                <ul>
+                    <li><strong>암호화</strong>: 데이터 전송 시 HTTPS/SSL 암호화 적용</li>
+                    <li><strong>접근 통제</strong>: 개인정보 접근 권한 제한</li>
+                    <li><strong>안전한 인증</strong>: 비밀번호 해시 및 안전한 세션 관리</li>
+                    <li><strong>상시 모니터링</strong>: 지속적인 보안 점검</li>
+                </ul>
+                <p>다만, 인터넷을 통한 전송 방식에 100% 안전한 방법은 존재하지 않으므로, 절대적인 보안을 보장할 수는 없습니다.</p>
+
+                <h2>8. 아동의 개인정보 보호</h2>
+                <p>Lingu Diary는 만 13세 미만 아동을 대상으로 하지 않습니다. 당사는 아동의 개인정보를 알고 수집하지 않습니다. 만약 아동의 개인정보가 제공되었다고 판단되는 경우 즉시 당사로 연락해 주시기 바랍니다.</p>
+
+                <h2>9. 개인정보 처리방침의 변경</h2>
+                <p>본 개인정보 처리방침은 수시로 변경될 수 있으며, 중요한 변경 사항은 다음과 같은 방법으로 고지합니다.</p>
+                <ul>
+                    <li>앱 내 알림</li>
+                    <li>이메일 알림 (해당되는 경우)</li>
+                    <li>본 방침 상단의 "최종 업데이트" 날짜 갱신</li>
+                </ul>
+                <p>변경 이후에도 본 앱을 계속 이용하시는 경우, 개정된 처리방침에 동의하신 것으로 간주합니다.</p>
+
+                <h2>10. 문의처</h2>
+                <p>본 개인정보 처리방침과 관련하여 질문, 우려 사항 또는 요청 사항이 있는 경우 아래로 연락해 주시기 바랍니다.</p>
+                <p><strong>LinguDiary 팀</strong><br>
+                이메일: <a href="mailto:support.lingudiary@gmail.com">support.lingudiary@gmail.com</a></p>
+
+                <h2>11. 준거법</h2>
+                <p>본 개인정보 처리방침은 대한민국 법령에 따라 규율됩니다.</p>
+            </div>
         </div>
 
         <div class="footer">
-            <a href="/" class="back-link">← Back to Legal Home</a>
+            <a href="index.html" class="back-link lang-active" data-lang="en">← Back to Legal Home</a>
+            <a href="index.html" class="back-link" data-lang="ko">← 법적 고지 홈으로</a>
         </div>
     </div>
+    <script src="lang.js"></script>
 </body>
 </html>
